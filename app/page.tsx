@@ -9,10 +9,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-
+import Autoplay from "embla-carousel-autoplay"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function Home() {
+  const autoplayPlugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false })
+  );
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -26,23 +30,31 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <Carousel className="w-full h-[calc(100vh-4rem)]">
-        <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index}>
-              <div className="p-1 h-full">
-                <Card className="h-full">
-                  <CardContent className="flex h-full items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
-      </Carousel>
+      <div className="relative">
+        <Carousel 
+          className="w-full h-[calc(100vh-80px)]"
+          opts={{
+            loop: true,
+          }}
+          plugins={[autoplayPlugin.current]}
+        >
+          <CarouselContent className="h-[calc(100vh-80px)]">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index} className="h-full">
+                <div className="p-1 h-full flex items-center justify-center">
+                  <Card className="h-[90%] w-[90%]">
+                    <CardContent className="flex h-full items-center justify-center p-6">
+                      <span className="text-4xl font-semibold">{index + 1}</span>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10" />
+        </Carousel>
+      </div>
 
       {/* Pastor's Message */}
       <section className="py-16">

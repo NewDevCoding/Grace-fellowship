@@ -1,8 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { MobileNav } from '@/components/ui/mobile-nav'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Church Website',
@@ -16,20 +15,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav className="bg-primary text-white p-4">
+      <body>
+        <nav className="bg-[#EBF0D2] text-black h-[80px] flex items-center sticky top-0 z-50">
           <div className="container mx-auto flex justify-between items-center">
-            <div className="text-2xl font-bold">Church Name</div>
-            <div className="space-x-4">
-              <a href="/about" className="hover:text-accent">About Us</a>
-              <a href="/connect" className="hover:text-accent">Connect</a>
-              <a href="/sermons" className="hover:text-accent">Sermons</a>
-              <a href="/give" className="hover:text-accent">Give</a>
+            <Link href="/" className="text-2xl font-bold ml-[30px] hover:text-gray-700">
+              Church Name
+            </Link>
+            <div className="hidden md:flex space-x-12">
+              <a href="/about" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">About Us</a>
+              <a href="/connect" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">Connect</a>
+              <a href="/sermons" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">Sermons</a>
+              <a href="/give" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">Give</a>
             </div>
+            <MobileNav />
           </div>
         </nav>
-        <main>{children}</main>
-        <footer className="bg-secondary text-white p-8 mt-8">
+        <main className="relative z-0">{children}</main>
+        <footer className="bg-[#EBF0D2] text-black p-8 mt-8">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
@@ -45,10 +47,10 @@ export default function RootLayout({
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-                <a href="/about" className="block hover:text-accent">About Us</a>
-                <a href="/connect" className="block hover:text-accent">Connect</a>
-                <a href="/sermons" className="block hover:text-accent">Sermons</a>
-                <a href="/give" className="block hover:text-accent">Give</a>
+                <a href="/about" className="block hover:text-gray-700">About Us</a>
+                <a href="/connect" className="block hover:text-gray-700">Connect</a>
+                <a href="/sermons" className="block hover:text-gray-700">Sermons</a>
+                <a href="/give" className="block hover:text-gray-700">Give</a>
               </div>
             </div>
             <div className="mt-8 text-center">
