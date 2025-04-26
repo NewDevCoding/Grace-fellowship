@@ -14,7 +14,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function Home() {
   const autoplayPlugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false })
+    Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
   return (

@@ -22,10 +22,10 @@ export default function RootLayout({
               Church Name
             </Link>
             <div className="hidden md:flex space-x-12">
-              <a href="/about" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">About Us</a>
-              <a href="/connect" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">Connect</a>
-              <a href="/sermons" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">Sermons</a>
-              <a href="/give" className="text-2xl font-semibold ml-[50px] hover:text-gray-700">Give</a>
+              <a href="/about" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">About Us</a>
+              <a href="/connect" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">Connect</a>
+              <a href="/sermons" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">Sermons</a>
+              <a href="/give" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">Give</a>
             </div>
             <MobileNav />
           </div>

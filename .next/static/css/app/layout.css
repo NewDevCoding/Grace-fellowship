@@ -422,6 +422,39 @@ video {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
+  /* Prevent overscrolling and unintended margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overscroll-behavior: none; /* Disable elastic scrolling */
+}
+
+/* Ensure the navbar stays fixed at the top */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.menu-item {
+  font-family: 'Montserrat', 'Proxima Nova', 'Gotham', Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: #222;
+  background: transparent;
+  border: none;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.menu-item:hover {
+  color: #555; /* Change color on hover */
+}
   * {
   border-color: hsl(var(--border));
 }
@@ -658,6 +691,9 @@ video {
 .ml-\[30px\] {
   margin-left: 30px;
 }
+.ml-\[50px\] {
+  margin-left: 50px;
+}
 .mr-\[30px\] {
   margin-right: 30px;
 }
@@ -666,9 +702,6 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-\[50px\] {
-  margin-left: 50px;
 }
 .block {
   display: block;
@@ -790,10 +823,10 @@ video {
 .gap-8 {
   gap: 2rem;
 }
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -819,16 +852,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-x-12 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-hidden {
   overflow: hidden;
