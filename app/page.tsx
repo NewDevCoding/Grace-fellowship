@@ -2,12 +2,21 @@
 
 import React from 'react';
 import Image from 'next/image'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-20">
+      {/* <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to Our Church</h1>
           <p className="text-xl mb-8">Join us in worship and fellowship</p>
@@ -16,7 +25,24 @@ export default function Home() {
             <p className="text-lg">Corporate Gathering: 10:30 AM</p>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Carousel className="w-full h-[calc(100vh-4rem)]">
+        <CarouselContent>
+          {Array.from({ length: 5 }).map((_, index) => (
+            <CarouselItem key={index}>
+              <div className="p-1 h-full">
+                <Card className="h-full">
+                  <CardContent className="flex h-full items-center justify-center p-6">
+                    <span className="text-4xl font-semibold">{index + 1}</span>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="left-4" />
+        <CarouselNext className="right-4" />
+      </Carousel>
 
       {/* Pastor's Message */}
       <section className="py-16">
