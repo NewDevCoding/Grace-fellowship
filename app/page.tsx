@@ -17,6 +17,15 @@ export default function Home() {
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
+  const images = {
+    image1: '',
+    image2: '2',
+    image3: '3',
+    image4: '4',
+    image5: '5',
+
+  }
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -39,7 +48,7 @@ export default function Home() {
           plugins={[autoplayPlugin.current]}
         >
           <CarouselContent className="h-[calc(100vh-80px)]">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 6 }).map((_, index) => (
               <CarouselItem key={index} className="h-full">
                 <div className="p-1 h-full flex items-center justify-center">
                   <Card className="h-[90%] w-[90%]">
