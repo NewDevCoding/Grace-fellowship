@@ -100,10 +100,10 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
   setIsSubmitting(true);
   emailjs
     .sendForm(
-      "service_j2ajbch",
-      "template_xvs3q9g",
+      "service_dq09rzd",
+      "template_19e61ua",
       e.currentTarget,
-      "XoL2XXzQgQVWLBibq"
+      "nb20rK-ttV-YtJzzz"
     )
     .then(
       (result) => {
