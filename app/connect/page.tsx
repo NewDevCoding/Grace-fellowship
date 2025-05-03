@@ -1,6 +1,20 @@
+
+import EmailForm from '@/components/EmailForm';
+
 export default function Connect() {
+
+
+
+
+
   return (
+
+    
+
     <div className="min-h-screen py-16">
+
+    
+    
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-12 text-center">Connect With Us</h1>
 
@@ -47,41 +61,7 @@ export default function Connect() {
         <section>
           <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
           <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-dark focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-              >
-                Send Message
-              </button>
-            </form>
+            <EmailForm />
           </div>
         </section>
       </div>
