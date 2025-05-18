@@ -23,7 +23,13 @@ export default function Home() {
     Autoplay({ delay: 7000, stopOnInteraction: true })
   );
 
-  const images = [chc1, chc2]
+  const images = [
+    { src: chc1, alt: "Church Image 1" },
+    { src: chc2, alt: "Church Image 2" },
+    { src: chc3, alt: "Church Image 3" },
+    { src: chc4, alt: "Church Image 4" },
+    { src: chc5, alt: "Church Image 5" }
+  ];
 
   
   return (
@@ -37,28 +43,23 @@ export default function Home() {
           }}
           plugins={[autoplayPlugin.current]}
         >
-          <CarouselContent className="h-[calc(100vh-80px)] mt-130">
-            {          
-            images.map((item, index) => (
+          <CarouselContent className="h-[calc(100vh-80px)]">
+            {images.map((image, index) => (
               <CarouselItem key={index} className="h-full">
                 <div className="p-1 h-full flex items-center justify-center">
-                  <Card className="h-[100%] w-[100%]" >
-                    <CardContent className="flex h-full items-center justify-center p-6" >
-                   
-                  <Image
-                    src={item}
-                    alt={"image"}
-                    className="absolute inset-0 w-full h-full object-cover"
-                    fill
-                  />
-                  
+                  <Card className="h-[100%] w-[100%] relative">
+                    <CardContent className="flex h-full items-center justify-center p-0">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        className="object-cover"
+                        fill
+                        priority={index === 0}
+                      />
                     </CardContent>
                   </Card>
-                  
                 </div>
               </CarouselItem>
-
-             
             ))}
           </CarouselContent>
           <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />
