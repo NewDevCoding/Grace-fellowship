@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { MobileNav } from '@/components/ui/mobile-nav'
 import Link from 'next/link'
-import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: 'Church Website',
@@ -15,7 +14,6 @@ const RootLayout = ({
   children: React.ReactNode
 }) => {
   return (
-    <ClerkProvider>
     <html lang="en">
       <body>
         <nav className="bg-[#EBF0D2] text-black h-[80px] flex items-center top-0 z-50 fixed w-full">
@@ -31,7 +29,6 @@ const RootLayout = ({
               <a href="/about" className="menu-item text-xl font-semibold ml-[50px] hover:text-gray-400">About Us</a>
               <a href="/connect" className="menu-item text-xl font-semibold ml-[50px] hover:text-gray-400">Connect</a>
               <a href="/sermons" className="menu-item text-xl font-semibold ml-[50px] hover:text-gray-400">Sermons</a>
-              
             </div>
             <MobileNav />
           </div>
@@ -68,7 +65,6 @@ const RootLayout = ({
         </footer>
       </body>
     </html>
-    </ClerkProvider>
   )
 } 
 

@@ -1,6 +1,6 @@
 export default function Sermons() {
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen pt-[100px] pb-16">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-12 text-center">Sermons</h1>
 
@@ -9,9 +9,13 @@ export default function Sermons() {
           <h2 className="text-3xl font-bold mb-6">Live Stream</h2>
           <div className="bg-gray-100 p-8 rounded-lg">
             <div className="aspect-w-16 aspect-h-9">
-              <div className="bg-gray-300 w-full h-96 flex items-center justify-center">
-                <p className="text-gray-600">Live stream will appear here</p>
-              </div>
+              <iframe
+                className="w-full h-[600px]"
+                src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+                title="Church Live Stream"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </section>
