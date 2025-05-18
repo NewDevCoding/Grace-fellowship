@@ -26,7 +26,6 @@ export default function Home() {
   const images = [
     { src: chc1, alt: "Church Image 1" },
     { src: chc2, alt: "Church Image 2" },
-    { src: chc3, alt: "Church Image 3" },
     { src: chc4, alt: "Church Image 4" },
     { src: chc5, alt: "Church Image 5" }
   ];
