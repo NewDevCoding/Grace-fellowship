@@ -11,35 +11,25 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { Card, CardContent } from "@/components/ui/card"
+import chc1 from '@/public/images/chc1.jpg'
+import chc2 from '@/public/images/chc2.jpg'
+import chc3 from '@/public/images/chc3.jpg'
+import chc4 from '@/public/images/chc4.jpg'
+import chc5 from '@/public/images/chc5.jpg'
+
 
 export default function Home() {
   const autoplayPlugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 7000, stopOnInteraction: true })
   );
 
-  const images = {
-    image1: '',
-    image2: '2',
-    image3: '3',
-    image4: '4',
-    image5: '5',
+  const images = [chc1, chc2]
 
-  }
-
+  
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      {/* <section className="bg-primary text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to Our Church</h1>
-          <p className="text-xl mb-8">Join us in worship and fellowship</p>
-          <div className="space-y-4">
-            <p className="text-lg">Sunday School: 9:00 AM</p>
-            <p className="text-lg">Corporate Gathering: 10:30 AM</p>
-          </div>
-        </div>
-      </section> */}
-      <div className="relative">
+      
+      <div className="relative pt-[75px]">
         <Carousel 
           className="w-full h-[calc(100vh-80px)]"
           opts={{
@@ -47,17 +37,28 @@ export default function Home() {
           }}
           plugins={[autoplayPlugin.current]}
         >
-          <CarouselContent className="h-[calc(100vh-80px)]">
-            {Array.from({ length: 6 }).map((_, index) => (
+          <CarouselContent className="h-[calc(100vh-80px)] mt-130">
+            {          
+            images.map((item, index) => (
               <CarouselItem key={index} className="h-full">
                 <div className="p-1 h-full flex items-center justify-center">
-                  <Card className="h-[90%] w-[90%]">
-                    <CardContent className="flex h-full items-center justify-center p-6">
-                      <span className="text-4xl font-semibold">{index + 1}</span>
+                  <Card className="h-[100%] w-[100%]" >
+                    <CardContent className="flex h-full items-center justify-center p-6" >
+                   
+                  <Image
+                    src={item}
+                    alt={"image"}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    fill
+                  />
+                  
                     </CardContent>
                   </Card>
+                  
                 </div>
               </CarouselItem>
+
+             
             ))}
           </CarouselContent>
           <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />

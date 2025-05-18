@@ -18,21 +18,27 @@ const RootLayout = ({
     <ClerkProvider>
     <html lang="en">
       <body>
-        <nav className="bg-[#EBF0D2] text-black h-[80px] flex items-center sticky top-0 z-50">
+        <nav className="bg-[#EBF0D2] text-black h-[80px] flex items-center top-0 z-50 fixed w-full">
           <div className="container mx-auto flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold ml-[30px] hover:text-gray-700">
-              Church Name
+              <img
+                src="/images/church-icon.png"
+                alt="Church Logo"
+                className="h-[80px] w-[280px] mr-2">
+              </img>
             </Link>
             <div className="hidden md:flex space-x-12">
-              <a href="/about" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">About Us</a>
-              <a href="/connect" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">Connect</a>
-              <a href="/sermons" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">Sermons</a>
-              <a href="/give" className="menu-item text-2xl font-semibold ml-[50px] hover:text-gray-700">Give</a>
+              <a href="/about" className="menu-item text-xl font-semibold ml-[50px] hover:text-gray-400">About Us</a>
+              <a href="/connect" className="menu-item text-xl font-semibold ml-[50px] hover:text-gray-400">Connect</a>
+              <a href="/sermons" className="menu-item text-xl font-semibold ml-[50px] hover:text-gray-400">Sermons</a>
+              
             </div>
             <MobileNav />
           </div>
         </nav>
+
         <main className="relative z-0">{children}</main>
+        
         <footer className="bg-[#EBF0D2] text-black p-8 mt-8">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

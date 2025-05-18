@@ -3,76 +3,68 @@
     "04355bffd6e24bb81f285852b7c07e799f2c795a": {
       "workers": {
         "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/connect/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
         "app/_not-found/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/(auth)/sign-up/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/sign-in/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/about/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!"
+        "app/about/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
+        "app/sermons/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
+        "app/connect/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/page": "rsc",
-        "app/connect/page": "rsc",
         "app/_not-found/page": "rsc",
-        "app/(auth)/sign-up/page": "rsc",
-        "app/sign-in/page": "rsc",
-        "app/about/page": "rsc"
+        "app/about/page": "rsc",
+        "app/sermons/page": "rsc",
+        "app/connect/page": "rsc"
       }
     },
     "6712922cbbb0ff6343eb5e98310c1d34c3efceff": {
       "workers": {
         "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/connect/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
         "app/_not-found/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/(auth)/sign-up/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/sign-in/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/about/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!"
+        "app/about/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
+        "app/sermons/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
+        "app/connect/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/page": "rsc",
-        "app/connect/page": "rsc",
         "app/_not-found/page": "rsc",
-        "app/(auth)/sign-up/page": "rsc",
-        "app/sign-in/page": "rsc",
-        "app/about/page": "rsc"
+        "app/about/page": "rsc",
+        "app/sermons/page": "rsc",
+        "app/connect/page": "rsc"
       }
     },
     "b40827ab14e1da58cb966fcd6276b65b1fc237be": {
       "workers": {
         "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/connect/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
         "app/_not-found/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/(auth)/sign-up/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/sign-in/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
-        "app/about/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!"
+        "app/about/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
+        "app/sermons/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!",
+        "app/connect/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Ckeyless-actions.js%22%2C%5B%22deleteKeylessAction%22%2C%22createOrReadKeylessAction%22%2C%22syncKeylessConfigAction%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/page": "rsc",
-        "app/connect/page": "rsc",
         "app/_not-found/page": "rsc",
-        "app/(auth)/sign-up/page": "rsc",
-        "app/sign-in/page": "rsc",
-        "app/about/page": "rsc"
+        "app/about/page": "rsc",
+        "app/sermons/page": "rsc",
+        "app/connect/page": "rsc"
       }
     },
     "78029ac9efb2653122ca0927bf0cd860c5b9835b": {
       "workers": {
         "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/connect/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
         "app/_not-found/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-up/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/sign-in/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/sermons/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/connect/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cisaac%5C%5COneDrive%5C%5CDesktop%5C%5CGrace%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
         "app/page": "action-browser",
-        "app/connect/page": "action-browser",
         "app/_not-found/page": "action-browser",
-        "app/(auth)/sign-up/page": "action-browser",
-        "app/sign-in/page": "action-browser",
-        "app/about/page": "action-browser"
+        "app/about/page": "action-browser",
+        "app/sermons/page": "action-browser",
+        "app/connect/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "+eE0nbQElWepllt/JAmJcpDhXTR7HvmKoL9+9i4PtvU="
+  "encryptionKey": "1ftvGSxKRVqBYqe8vqeAfH0tL4ItnCEZTPrA4H+lNPg="
 }
