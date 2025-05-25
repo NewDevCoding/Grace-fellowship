@@ -14,10 +14,11 @@ export default function SignIn() {
   const callbackUrl = searchParams.get("callbackUrl") || "/sermons";
 
   useEffect(() => {
-    if (status === "authenticated") {
+    if (status === "authenticated" && session) {
+      console.log('Session authenticated:', session);
       router.push(callbackUrl);
     }
-  }, [status, callbackUrl, router]);
+  }, [status, session, callbackUrl, router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -45,6 +46,10 @@ export default function SignIn() {
 
   if (status === "loading") {
     return <div>Loading...</div>;
+  }
+
+  if (status === "authenticated") {
+    return <div>Redirecting...</div>;
   }
 
   return (

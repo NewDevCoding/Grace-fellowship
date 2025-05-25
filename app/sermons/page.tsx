@@ -4,15 +4,19 @@ import { redirect } from "next/navigation";
 
 export default async function Sermons() {
   const session = await getServerSession(authOptions);
+  console.log('Sermons page session:', session);
 
   if (!session) {
+    console.log('No session found, redirecting to sign in');
     redirect("/auth/signin");
   }
 
+  console.log('Session found, rendering sermons page');
   return (
     <div className="min-h-screen pt-[100px] pb-16">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-12 text-center">Sermons</h1>
+        <p className="text-center mb-8">Welcome, {session.user?.email}</p>
 
         {/* Live Stream Section */}
         <section className="mb-16">

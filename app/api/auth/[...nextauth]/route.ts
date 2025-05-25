@@ -13,16 +13,15 @@ if (!process.env.RESEND_API_KEY) {
   throw new Error("RESEND_API_KEY is not set in environment variables");
 }
 
-if (!process.env.EMAIL_FROM) {
-  throw new Error("EMAIL_FROM is not set in environment variables");
-}
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 const prisma = new PrismaClient();
 
 export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   adapter: PrismaAdapter(prisma),
+  session: {
+    strategy: "jwt"
+  },
   providers: [
     EmailProvider({
       server: {
@@ -33,17 +32,16 @@ export const authOptions: NextAuthOptions = {
           pass: process.env.RESEND_API_KEY,
         },
       },
-      from: process.env.EMAIL_FROM,
+      from: "onboarding@resend.dev",
       sendVerificationRequest: async ({ identifier: email, url }) => {
         console.log('=== Email Verification Request ===');
         console.log('To:', email);
         console.log('URL:', url);
         console.log('Resend API Key present:', !!process.env.RESEND_API_KEY);
-        console.log('From email:', process.env.EMAIL_FROM);
         
         try {
           const result = await resend.emails.send({
-            from: process.env.EMAIL_FROM,
+            from: "onboarding@resend.dev",
             to: email,
             subject: "Sign in to Your Account",
             html: `<p>Click the magic link below to sign in:</p><p><a href="${url}">Sign In</a></p>`,
@@ -51,6 +49,11 @@ export const authOptions: NextAuthOptions = {
           console.log('Email sent successfully:', result);
         } catch (error) {
           console.error('Failed to send email:', error);
+          if (error instanceof Error) {
+            console.error('Error name:', error.name);
+            console.error('Error message:', error.message);
+            console.error('Error stack:', error.stack);
+          }
           throw error;
         }
       },
@@ -68,6 +71,21 @@ export const authOptions: NextAuthOptions = {
       console.log('Is email allowed:', isAllowed);
       return isAllowed;
     },
+    async session({ session, token }) {
+      console.log('=== Session Callback ===');
+      console.log('Session:', session);
+      console.log('Token:', token);
+      return session;
+    },
+    async jwt({ token, user }) {
+      console.log('=== JWT Callback ===');
+      console.log('Token:', token);
+      console.log('User:', user);
+      if (user) {
+        token.email = user.email;
+      }
+      return token;
+    }
   },
   pages: {
     signIn: "/auth/signin",
