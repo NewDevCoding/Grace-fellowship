@@ -1,7 +1,8 @@
 export const allowedEmails: string[] = [
-  // Add your allowed email addresses here
+  // Add new email addresses here to allow users to sign in
   // Example: "user@example.com"
-  "isaac@thesheridans.email"
+  "isaac@thesheridans.email",
+   
 ];
 
 export const isEmailAllowed = (email: string): boolean => {

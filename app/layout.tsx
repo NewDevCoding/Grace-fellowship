@@ -2,11 +2,14 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { MobileNav } from '@/components/ui/mobile-nav'
 import Link from 'next/link'
-import { SessionProvider } from "next-auth/react"
+import { Providers } from './providers'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Church Website',
-  description: 'Welcome to our church community',
+  title: 'Grace Fellowship Church',
+  description: 'Grace Fellowship Church of Christ',
 }
 
 const RootLayout = ({
@@ -16,8 +19,8 @@ const RootLayout = ({
 }) => {
   return (
     <html lang="en">
-      <body>
-        <SessionProvider>
+      <body className={inter.className}>
+        <Providers>
           <nav className="bg-[#EBF0D2] text-black h-[80px] flex items-center top-0 z-50 fixed w-full">
             <div className="container mx-auto flex justify-between items-center">
               <Link href="/" className="text-2xl font-bold ml-[30px] hover:text-gray-700">
@@ -65,7 +68,7 @@ const RootLayout = ({
               </div>
             </div>
           </footer>
-        </SessionProvider>
+        </Providers>
       </body>
     </html>
   )
