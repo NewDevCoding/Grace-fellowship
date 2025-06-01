@@ -25,7 +25,7 @@ export default async function Sermons() {
             <div className="aspect-w-16 aspect-h-9">
               <iframe
                 className="w-full h-[600px]"
-                src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+                src="https://www.youtube.com/embed/live_stream?channel=UCKqsjGhwOVqTieFRJxp4PRQ"
                 title="Church Live Stream"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -35,7 +35,7 @@ export default async function Sermons() {
         </section>
 
         {/* Recent Sermons Section */}
-        <section>
+        {/* <section>
           <h2 className="text-3xl font-bold mb-6">Recent Sermons</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -78,7 +78,7 @@ export default async function Sermons() {
               </button>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
